@@ -34,6 +34,3 @@ def check_prime_api():
 
 	return jsonify(result)
 
-
-if __name__ =='__main__':
-	app.run()
