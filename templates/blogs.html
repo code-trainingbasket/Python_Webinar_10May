@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home Page</title>
+	<title>Blogs</title>
 </head>
 <body>
-	<h1>{{name}} Home Page</h1>
-
 	<a href="{{ url_for('home')}}"><button>Home</button></a>
 	<a href="{{ url_for('blogs')}}"><button>Blogs</button></a>
-	<p>This is a simple example of Flask web application.</p>
+	<br>
+	<table border="2">
+	<tr>
+		<th>Topic</th>
+	</tr>
+	{% for blog in all_blogs %}
+	<tr>
+		<td>{{blog}}</td>
+	</tr>
+	{% endfor %}
+	</table>
 </body>
 </html>
