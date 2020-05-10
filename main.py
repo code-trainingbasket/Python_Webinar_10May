@@ -1,12 +1,14 @@
 import flask
 
+from flask import render_template
+
 app = flask.Flask(__name__)
 
 app.config['DEBUG'] = True
 
 @app.route('/', methods = ['GET'])
 def home():
-	return "<h>My Home Page</h><p>How are you doing today</p>"
+	return render_template('home.html',name='Test')
 
 
 if __name__ =='__main__':
