@@ -24,4 +24,4 @@ Run Below commands only if you make any changes
 8. heroku git:remote -a "sitename"
     Ex: heroku git:remote -a flasksimple
 9. git push heroku master
-10. open www.flasksimple.herokuapp.com in your browser.
+10. On success you can open the web application using www.sitename.herokuapp.com in your browser.
